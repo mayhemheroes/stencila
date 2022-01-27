@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_stencila_help=self.webpackChunk_stencila_help||[]).push([[53],{1109:e=>{e.exports=JSON.parse('{"pluginId":"default","version":"current","label":"Next","banner":null,"badge":false,"className":"docs-version-current","isLast":true,"docsSidebars":{"sidebar":[]}}')}}]);
