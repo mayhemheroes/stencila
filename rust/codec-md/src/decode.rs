@@ -270,7 +270,7 @@ pub fn decode_fragment(md: &str, default_lang: Option<String>) -> Vec<BlockConte
                 }
                 Tag::Paragraph => {
                     let trimmed = inlines.text.trim();
-                    let node = if trimmed.starts_with("$$") && trimmed.ends_with("$$") {
+                    let node = if trimmed.starts_with("$$") && trimmed.ends_with("$$") && trimmed.len() > 3 {
                         BlockContent::MathBlock(MathBlock {
                             text: trimmed[2..trimmed.len() - 2].trim().to_string(),
                             math_language: Some(Box::new("tex".to_string())),
